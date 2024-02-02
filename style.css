@@ -10,7 +10,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 6fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 150px 1fr;
     height: 100vh;
 
     font-family: var(--main-font);
@@ -21,18 +21,92 @@ body {
 .header {
     background-color: red;
     grid-row: 1 / span 1;
-}
-
-.header.container {
-    padding: 20px 10px 10px 20px;
+    /* padding: 20px 10px 10px 20px; */
     color: white;
     font-weight: bold;
     font-size: large;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 50px 4fr 2fr minmax(20px, 1fr) minmax(60px, 80px) 2fr;
+    align-items: center;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#magnify {
+    justify-self: center;
+}
+
+#search-bar {
+    height: 30px;
+    border-radius: 15px;
+    border-style: none;
+    padding-left: 12px;
+}
+
+#notification {
+    justify-self: end;
+}
+
+#avatar-small {
+    justify-self: center;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: minmax(80px, 100px) minmax(220px, 4fr) 2fr;
+}
+
+#info-input-btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 5px;
+}
+
+#info-input-btns > button {
+    background-color: rgb(42, 186, 186);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+}
+
+.info > .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+#welcome-message {
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+#greeting {
+    font-size: small;
+}
+
+#username-handle {
+    font-size: 28px;
 }
 
 /* SIDEBAR */
