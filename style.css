@@ -293,3 +293,7 @@ p {
 .app-name{
     color: var(--description-color)
 }
+
+.app-info {
+    padding-left: 5px;
+}
